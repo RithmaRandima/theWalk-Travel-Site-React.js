@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --primary-dark: #ff00008d;
+  --primary-light: #690c0c;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply font-[Outfit];
+  }
+
+  li {
+    @apply p-4 text-sm;
+  }
+
+  button {
+    @apply px-4 py-1 bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] text-white;
+  }
+
+  h2 {
+    @apply text-xl font-bold;
+  }
+}
+
+.offer-box:hover .offer-box-overlay {
+  background-color: #ff00008d;
+}
+
+.about-box:hover .about-content {
+  color: #fff;
+}
+.activity-img-container:hover img {
+  transform: scale(1.02);
+}
+
+.activity-img-container:hover .activity-img-title {
+  transform: translateY(-5px);
+  font-size: 21px;
+}
+
+.gallery-event-bg-container {
+  background: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url("./Assets/event.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.booking-container {
+  background: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url("./Assets/activity-1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
