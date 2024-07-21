@@ -1,8 +1,17 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 function Booking() {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, scale: 0.5 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{
+        type: "spring",
+        stiffness: 100,
+        damping: 10,
+        delay: 0.4,
+      }}
       id="deals"
       className="booking-container max-w-[1140px] m-auto w-full p-6 py-[20px] my-[100px]"
     >
@@ -32,7 +41,7 @@ function Booking() {
           <button className="w-full">Rates & Availabilities</button>
         </div>
       </form>
-    </div>
+    </motion.div>
   );
 }
 

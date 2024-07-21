@@ -14,7 +14,7 @@ import Offer from "./Components/Offer/Offer";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App overflow-x-hidden">
       <Navbar />
       <NavbarBottom />
       <Hero />
