@@ -1,29 +1,29 @@
 import React from "react";
 import Navbar from "./Components/Navbar/Navbar";
-import NavbarBottom from "./Components/NavbarBottom/NavbarBottom";
 import Hero from "./Components/Hero/Hero";
-import Activites from "./Components/Activities/Activites";
 import Booking from "./Components/BookingSection/Booking";
-import Gallery from "./Components/Gallery/Gallery";
 import Footer from "./Components/Footer/Footer";
-import Packages from "./Components/Packages/Packages";
+// import Packages from "./Components/Packages/Packages";
 import AboutDetails from "./Components/AboutDetails/AboutDetails";
-import StayingHotel from "./Components/StayingHotels/StayingHotel";
-import Events from "./Components/Events/Events";
+// import StayingHotel from "./Components/StayingHotels/StayingHotel";
+// import Events from "./Components/Events/Events";
+import VideoSection from "./Components/VideoSection/VideoSection";
+import NewsLetter from "./Components/NewsLetter/NewsLetter";
+import PopularDestinations from "./Components/PopularDestinations/PopularDestinations";
 
 function App() {
   return (
     <div className="App overflow-x-hidden">
       <Navbar />
-      <NavbarBottom />
       <Hero />
-      <Activites />
+      {/* <Booking /> */}
       <AboutDetails />
-      <Booking />
-      <Packages />
-      <Gallery />
-      <StayingHotel />
-      <Events />
+      {/* <Packages /> */}
+      <PopularDestinations />
+      <VideoSection />
+      <NewsLetter />
+      {/* <StayingHotel /> */}
+      {/* <Events /> */}
       <Footer />
     </div>
   );

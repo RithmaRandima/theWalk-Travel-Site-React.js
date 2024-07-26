@@ -21,10 +21,10 @@
   li {
     @apply p-4 text-sm;
   }
-
+  /* 
   button {
     @apply px-4 py-1 bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] text-white;
-  }
+  } */
 
   h2 {
     @apply text-xl font-bold;
@@ -50,14 +50,6 @@
 .gallery-event-bg-container {
   background: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
     url("./Assets/event.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-
-.booking-container {
-  background: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-    url("./Assets/activity-1.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;

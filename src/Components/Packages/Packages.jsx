@@ -17,7 +17,7 @@ const Packages = () => {
           Tour Packages
         </h1>
       </div>
-      <div className=" w-[100%]  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+      <div className=" w-[100%]  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
         <PackagesBox
           img={img1}
           name={"Lion, Singapore"}
@@ -38,12 +38,6 @@ const Packages = () => {
         />
         <PackagesBox
           img={img4}
-          name={"Lion, Singapore"}
-          price={"$200"}
-          city={"San Francisco, CA"}
-        />
-        <PackagesBox
-          img={img5}
           name={"Lion, Singapore"}
           price={"$200"}
           city={"San Francisco, CA"}
