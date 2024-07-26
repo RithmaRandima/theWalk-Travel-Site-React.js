@@ -10,7 +10,6 @@ import Packages from "./Components/Packages/Packages";
 import AboutDetails from "./Components/AboutDetails/AboutDetails";
 import StayingHotel from "./Components/StayingHotels/StayingHotel";
 import Events from "./Components/Events/Events";
-import Offer from "./Components/Offer/Offer";
 
 function App() {
   return (
@@ -20,7 +19,6 @@ function App() {
       <Hero />
       <Activites />
       <AboutDetails />
-      <Offer />
       <Booking />
       <Packages />
       <Gallery />
