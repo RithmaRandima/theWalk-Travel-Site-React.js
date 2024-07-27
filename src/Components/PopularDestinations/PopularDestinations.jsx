@@ -6,6 +6,7 @@ import { Background, Parallax } from "react-parallax";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { popularDestinationsData } from "../../Data/DestinationData";
 
 const PopularDestinations = () => {
   return (
@@ -34,77 +35,19 @@ const PopularDestinations = () => {
           </p>
         </div>
         <div className=" w-[100%] mx-auto  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
-          <DestinationBox
-            img={img}
-            days="15 Days"
-            name="Half Board"
-            price="$ 50"
-            btnText="VIEW TRIPS"
-            userCount="12+"
-          />
-
-          <DestinationBox
-            img={img}
-            days="15 Days"
-            name="Half Board"
-            price="$ 50"
-            btnText="VIEW TRIPS"
-            userCount="12+"
-          />
-
-          <DestinationBox
-            img={img}
-            days="15 Days"
-            name="Half Board"
-            price="$ 50"
-            btnText="VIEW TRIPS"
-            userCount="12+"
-          />
-
-          <DestinationBox
-            img={img}
-            days="15 Days"
-            name="Half Board"
-            price="$ 50"
-            btnText="VIEW TRIPS"
-            userCount="12+"
-          />
-
-          <DestinationBox
-            img={img}
-            days="15 Days"
-            name="Half Board"
-            price="$ 50"
-            btnText="VIEW TRIPS"
-            userCount="12+"
-          />
-
-          <DestinationBox
-            img={img}
-            days="15 Days"
-            name="Half Board"
-            price="$ 50"
-            btnText="VIEW TRIPS"
-            userCount="12+"
-          />
-
-          <DestinationBox
-            img={img}
-            days="15 Days"
-            name="Half Board"
-            price="$ 50"
-            btnText="VIEW TRIPS"
-            userCount="12+"
-          />
-
-          <DestinationBox
-            img={img}
-            days="15 Days"
-            name="Half Board"
-            price="$ 50"
-            btnText="VIEW TRIPS"
-            userCount="12+"
-          />
+          {popularDestinationsData.map((data) => {
+            return (
+              <DestinationBox
+                key={data.id}
+                img={data.img}
+                days={data.days}
+                title={data.title}
+                price={data.price}
+                description={data.description}
+                userCount={data.userCount}
+              />
+            );
+          })}
         </div>
 
         <div className="py-1 px-2 pt-14 text-center">

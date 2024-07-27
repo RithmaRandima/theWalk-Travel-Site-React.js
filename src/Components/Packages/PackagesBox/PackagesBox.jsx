@@ -9,7 +9,7 @@ function PackagesBox(props) {
       <img
         src={props.img}
         className="h-[350px] w-[100%]  object-cover"
-        alt={props.name}
+        alt={props.title}
       />
       <div className="package-box-overlay px-4 pt-7 absolute w-[100%]  bottom-0  bg-gradient-to-t from-black to-transparent flex flex-col justify-between h-fit">
         <div>
@@ -17,15 +17,18 @@ function PackagesBox(props) {
             <CiFaceSmile className="mr-3 text-[22px]" /> 9.3 Superb
           </p>
           <div className="flex justify-between items-center py-2 relative">
-            <h1 className="text-[20px] font-bold text-white">{props.name}</h1>
+            <h1 className="text-[19px] w-[70%] font-bold text-white">
+              {props.title}
+            </h1>
             <p className="package-price text-[#00ffee] font-extrabold">
-              {props.price}
+              ${props.price}
             </p>
           </div>
         </div>
 
         <div className="package-box-overlay-bottom-section hidden">
           <p className="text-white w-[98%] my-3 font-normal text-[14px]">
+            {props.description}
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
             natus adipisicing elit. Impedit natus Lorem ipsum dolor, sit amet
             consectetur adipisicing elit. Voluptatibus, saepe?

@@ -10,16 +10,16 @@ function PopularDestinationBox(props) {
       <img
         src={props.img}
         className="h-[340px]  w-[100%]  object-cover"
-        alt={props.name}
+        alt={props.title}
       />
       <div className="popular-destination-box px-4 pt-7 absolute w-[100%] h-fit bg-gradient-to-t from-[#000] to-black/10 bottom-0 pb-3 text-center  flex flex-col justify-between">
         <div>
           <div className="flex justify-between items-center py-2">
             <h1 className="text-[30px] md:text-[22px] font-bold text-white">
-              {props.name}
+              {props.title}
             </h1>
             <p className=" text-[#00ffee] font-extrabold text-[25px]">
-              {props.price}
+              ${props.price}
             </p>
           </div>
           <p className="flex items-center text-[15px] text-white ">
@@ -29,9 +29,7 @@ function PopularDestinationBox(props) {
 
         <div className="hidden popular-destination-box-bottom ">
           <p className="text-white w-[98%] my-3 font-normal text-[14px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-            natus adipisicing elit. Impedit natus. Lorem ipsum dolor sit amet
-            Lorem, ipsum. consectetur.
+            {props.description}
           </p>
 
           <button className="bg-[#00ffee] uppercase text-[12px] md:text-[9px] px-3 py-1 flex mx-auto justify-between items-center rounded-full hover:bg-white mt-4">

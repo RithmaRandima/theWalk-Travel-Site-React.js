@@ -8,6 +8,7 @@ import PackagesBox from "./PackagesBox/PackagesBox";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { packagesData } from "../../Data/DestinationData";
 
 const Packages = () => {
   var settings = {
@@ -55,56 +56,17 @@ const Packages = () => {
       </div>
       <div className="w-[100%] mx-auto mt-[10px] h-[100%]">
         <Slider {...settings}>
-          <PackagesBox
-            img={img1}
-            name={"Lion, Singapore"}
-            price={"$200"}
-            city={"San Francisco, CA"}
-          />
-          <PackagesBox
-            img={img2}
-            name={"Lion, Singapore"}
-            price={"$200"}
-            city={"San Francisco, CA"}
-          />
-          <PackagesBox
-            img={img3}
-            name={"Lion, Singapore"}
-            price={"$200"}
-            city={"San Francisco, CA"}
-          />
-          <PackagesBox
-            img={img4}
-            name={"Lion, Singapore"}
-            price={"$200"}
-            city={"San Francisco, CA"}
-          />
-
-          <PackagesBox
-            img={img3}
-            name={"Lion, Singapore"}
-            price={"$200"}
-            city={"San Francisco, CA"}
-          />
-          <PackagesBox
-            img={img4}
-            name={"Lion, Singapore"}
-            price={"$200"}
-            city={"San Francisco, CA"}
-          />
-
-          <PackagesBox
-            img={img3}
-            name={"Lion, Singapore"}
-            price={"$200"}
-            city={"San Francisco, CA"}
-          />
-          <PackagesBox
-            img={img4}
-            name={"Lion, Singapore"}
-            price={"$200"}
-            city={"San Francisco, CA"}
-          />
+          {packagesData.map((data) => {
+            return (
+              <PackagesBox
+                key={data.id}
+                img={data.img}
+                title={data.title}
+                price={data.price}
+                description={data.description}
+              />
+            );
+          })}
         </Slider>
       </div>
     </div>
