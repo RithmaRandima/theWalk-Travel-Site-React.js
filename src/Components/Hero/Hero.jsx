@@ -30,7 +30,7 @@ function Hero() {
             </div>
           </div>
         </div>
-        <div className="none md:block absolute z-10 w-[100%] h-[92vh]">
+        <div className="hidden md:block absolute z-10 w-[100%] h-[92vh]">
           <Booking />
         </div>
       </Parallax>

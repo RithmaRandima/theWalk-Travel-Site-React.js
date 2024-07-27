@@ -1,0 +1,19 @@
+.package-box .package-box-overlay {
+  transition: 0.5s;
+}
+.package-box:hover .package-box-overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+  height: 100%;
+  transition: 1s;
+}
+
+.package-box:hover .package-box-overlay-bottom-section {
+  display: block;
+}
+
+.package-box img {
+  transition: 1s;
+}
+.package-box:hover img {
+  filter: blur(2px) !important;
+}

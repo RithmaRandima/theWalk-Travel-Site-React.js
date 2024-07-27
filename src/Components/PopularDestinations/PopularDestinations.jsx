@@ -1,14 +1,59 @@
 import React from "react";
-import DestinationBox from "../DestinationBox/DestinationBox";
+import DestinationBox from "./PopularDestinationBox/PopularDestinationBox";
 import img from "../../Assets/about-img-2.jpg";
 import BackgroundImg from "../../Assets/pngimg.com - world_map_PNG31 (1).png";
 import { Background, Parallax } from "react-parallax";
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+
 const PopularDestinations = () => {
+  var settings = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    speed: 1600,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          initialSlide: 1,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 924,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 1,
+
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+          infinite: true,
+        },
+      },
+    ],
+  };
   return (
     <div
       id="packages"
-      className="flex flex-col w-[100%] h-[100%]  m-auto pb-8 pt-6"
+      className="flex flex-col w-[100%] h-[100%]  m-auto pb-20 pt-6"
     >
       <Parallax strength={400} className="w-[100%] h-[100%] relative pb-7">
         <Background className="custom-bg w-[100vw] h-[100vh] opacity-[0.2] ">
@@ -27,7 +72,7 @@ const PopularDestinations = () => {
             architecto. Lorem ipsum dolor sit amet.
           </p>
         </div>
-        <div className=" w-[96%] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
+        <div className=" w-[100%] mx-auto  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
           <DestinationBox
             img={img}
             days="15 Days"
