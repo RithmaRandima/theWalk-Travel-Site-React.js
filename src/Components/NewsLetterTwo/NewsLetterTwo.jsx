@@ -11,7 +11,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Background, Parallax } from "react-parallax";
 
-const AboutBottom = () => {
+const NewsLetterTwo = () => {
   var settings = {
     infinite: true,
     speed: 500,
@@ -90,4 +90,4 @@ const AboutBottom = () => {
   );
 };
 
-export default AboutBottom;
+export default NewsLetterTwo;

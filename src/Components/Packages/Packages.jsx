@@ -3,7 +3,6 @@ import img1 from "../../Assets/package1.jpg";
 import img2 from "../../Assets/package2.jpg";
 import img3 from "../../Assets/package3.jpg";
 import img4 from "../../Assets/package4.jpg";
-import img5 from "../../Assets/package5.jpg";
 import PackagesBox from "./PackagesBox/PackagesBox";
 
 import "slick-carousel/slick/slick.css";
@@ -18,7 +17,7 @@ const Packages = () => {
     autoplay: true,
     autoplaySpeed: 5000,
     speed: 1600,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     initialSlide: 0,
     responsive: [
@@ -54,7 +53,7 @@ const Packages = () => {
           Lorem ipsum dolor sit amet.
         </p>
       </div>
-      <div className="w-[100%] md:w-[95%] mx-auto mt-[10px] h-[100%]">
+      <div className="w-[100%] mx-auto mt-[10px] h-[100%]">
         <Slider {...settings}>
           <PackagesBox
             img={img1}

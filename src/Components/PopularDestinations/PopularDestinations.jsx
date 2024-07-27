@@ -6,56 +6,17 @@ import { Background, Parallax } from "react-parallax";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 
 const PopularDestinations = () => {
-  var settings = {
-    dots: false,
-    arrows: false,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    speed: 1600,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    initialSlide: 0,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          initialSlide: 1,
-          infinite: true,
-        },
-      },
-      {
-        breakpoint: 924,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          initialSlide: 1,
-
-          infinite: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 1,
-          infinite: true,
-        },
-      },
-    ],
-  };
   return (
     <div
       id="packages"
-      className="flex flex-col w-[100%] h-[100%]  m-auto pb-20 pt-6"
+      className="flex flex-col w-[100%] h-[100%]  m-auto pb-20  "
     >
-      <Parallax strength={400} className="w-[100%] h-[100%] relative pb-7">
+      <Parallax
+        strength={400}
+        className="w-[100%] h-[100%] relative pb-7 pt-11"
+      >
         <Background className="custom-bg w-[100vw] h-[100vh] opacity-[0.2] ">
           <img
             src={BackgroundImg}
@@ -117,15 +78,46 @@ const PopularDestinations = () => {
             btnText="VIEW TRIPS"
             userCount="12+"
           />
+
+          <DestinationBox
+            img={img}
+            days="15 Days"
+            name="Half Board"
+            price="$ 50"
+            btnText="VIEW TRIPS"
+            userCount="12+"
+          />
+
+          <DestinationBox
+            img={img}
+            days="15 Days"
+            name="Half Board"
+            price="$ 50"
+            btnText="VIEW TRIPS"
+            userCount="12+"
+          />
+
+          <DestinationBox
+            img={img}
+            days="15 Days"
+            name="Half Board"
+            price="$ 50"
+            btnText="VIEW TRIPS"
+            userCount="12+"
+          />
         </div>
 
         <div className="py-1 px-2 pt-14 text-center">
           <p className="text-gray-700 text-[19px] my-1 md:w-[830px] mx-auto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            sint nam aliquam adipisci ipsum harum id maiores nostrum at
-            architecto. Lorem ipsum dolor sit amet.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit animi
+            iure officiis quibusdam excepturi repellendus aperiam. Atque
+            eligendi eos nemo molestiae enim dignissimos expedita repudiandae
+            dicta culpa vero numquam, asperiores ipsa optio minima molestias.
+            Error quisquam tenetur unde dolores illum.
           </p>
-          <button>View All Toures</button>
+          <button className="bg-[#00ffee] p-2 px-7 rounded-[50px] text-white text-[13px] uppercase mt-7">
+            View All Tours
+          </button>
         </div>
       </Parallax>
     </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { FaArrowRight } from "react-icons/fa";
 
 const BlogBox = (props) => {
   return (
@@ -23,8 +24,8 @@ const BlogBox = (props) => {
         <p className="font-[200] text-[18px] md:text-[15px] mb-3">
           {props.description}
         </p>
-        <button className="hidden md:block md:py-1 md:text-[13px] mb-3">
-          Read More
+        <button className="hidden md:flex items-center md:py-1 md:text-[10px] mb-3 bg-[#00ffee] px-3 rounded-[50px] hover:scale-110 duration-500">
+          Read More <FaArrowRight className="ml-1" />
         </button>
       </div>
     </div>

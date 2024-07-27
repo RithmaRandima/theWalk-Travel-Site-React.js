@@ -13,7 +13,7 @@ function Booking() {
         delay: 0.4,
       }}
       id="deals"
-      className="max-w-[1140px] w-full px-10 py-[30px] bg-white shadow-xl rounded-[10px] mb-[100px] z-10 absolute left-[50%] translate-x-[-50%] top-[100%] translate-y-[-100%]"
+      className="max-w-[1140px] w-full px-10 py-[10px] bg-white shadow-xl rounded-[10px] mb-[100px] z-10 absolute left-[50%] translate-x-[-50%] top-[100%] translate-y-[-100%]"
     >
       <form className="lg:flex lg:justify-between w-full items-center text-black">
         <div className="flex flex-col my-2 py-2">

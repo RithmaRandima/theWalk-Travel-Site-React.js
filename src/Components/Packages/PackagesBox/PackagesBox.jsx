@@ -13,12 +13,12 @@ function PackagesBox(props) {
       />
       <div className="package-box-overlay px-4 pt-7 absolute w-[100%]  bottom-0  bg-gradient-to-t from-black to-transparent flex flex-col justify-between h-fit">
         <div>
-          <p className="flex items-center text-[15px] text-white ">
-            <CiFaceSmile className="mr-3 text-[20px]" /> 9.3 Superb
+          <p className="flex items-center text-[16px] text-white ">
+            <CiFaceSmile className="mr-3 text-[22px]" /> 9.3 Superb
           </p>
-          <div className="flex justify-between items-center py-2">
-            <h1 className="text-[22px] font-bold text-white">{props.name}</h1>
-            <p className=" text-[#00ffee] font-extrabold text-[25px]">
+          <div className="flex justify-between items-center py-2 relative">
+            <h1 className="text-[20px] font-bold text-white">{props.name}</h1>
+            <p className="package-price text-[#00ffee] font-extrabold">
               {props.price}
             </p>
           </div>

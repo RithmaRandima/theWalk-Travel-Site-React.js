@@ -1,8 +1,9 @@
 import React from "react";
 import BlogBox from "../BlogBox/BlogBox";
 import "../BlogBox/BlogBox.css";
-import img1 from "../../Assets/about-img-3.jpg";
+import img1 from "../../Assets/blog-big.jpg";
 import { blogData } from "../../Data/BlogData";
+import { FaArrowRight } from "react-icons/fa";
 
 const Blog = () => {
   return (
@@ -62,7 +63,9 @@ const Blog = () => {
               and activities, readers will learn how to plan a stress-free and
               enjoyable trip.
             </p>
-            <button className="hover:scale-110 duration-500">Read More</button>
+            <button className="hover:scale-110 duration-500 flex items-center  bg-[#00ffee] px-4 py-1 rounded-[50px] text-[12px] ">
+              Read More <FaArrowRight size={12} className="ml-2" />
+            </button>
           </div>
         </div>
       </div>

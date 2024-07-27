@@ -17,3 +17,21 @@
 .package-box:hover img {
   filter: blur(2px) !important;
 }
+
+.package-price {
+  position: absolute;
+  animation: price 5s ease-in infinite;
+  right: 0;
+}
+
+@keyframes price {
+  0% {
+    font-size: 20px;
+  }
+  50% {
+    font-size: 25px;
+  }
+  100% {
+    font-size: 20px;
+  }
+}

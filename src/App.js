@@ -7,9 +7,10 @@ import AboutDetails from "./Components/AboutDetails/AboutDetails";
 import VideoSection from "./Components/VideoSection/VideoSection";
 import NewsLetter from "./Components/NewsLetter/NewsLetter";
 import PopularDestinations from "./Components/PopularDestinations/PopularDestinations";
-import AboutBottom from "./Components/AboutBottom/AboutBottom";
+import NewsLetterTwo from "./Components/NewsLetterTwo/NewsLetterTwo";
 import DestinationPicker from "./Components/DestinationPicker/DestinationPicker";
 import Blog from "./Components/Blog/Blog";
+import TestimonialsAndStaff from "./Components/TestimonialsAndStaff/TestimonialsAndStaff";
 
 function App() {
   return (
@@ -22,8 +23,9 @@ function App() {
       <NewsLetter />
       <DestinationPicker />
       <Packages />
+      <NewsLetterTwo />
       <Blog />
-      <AboutBottom />
+      <TestimonialsAndStaff />
       <Footer />
     </div>
   );
