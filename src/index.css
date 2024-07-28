@@ -46,11 +46,3 @@
   transform: translateY(-5px);
   font-size: 21px;
 }
-
-.gallery-event-bg-container {
-  background: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-    url("./Assets/event.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}

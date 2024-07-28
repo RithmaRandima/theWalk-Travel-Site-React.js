@@ -1,12 +1,15 @@
 import React from "react";
 import { TiTick } from "react-icons/ti";
-import image1 from "../../Assets/about-img-1.jpg";
-import image2 from "../../Assets/about-img-2.jpg";
-import image3 from "../../Assets/about-img-3.jpg";
-import image4 from "../../Assets/about-img-4.jpg";
-import image5 from "../../Assets/about-img-5.jpg";
-import Slider from "react-slick";
+import backgroundImage from "../../Assets/Newsletter-Two-Background.jpg";
 
+import image01 from "../../Assets/popular-destination-1.jpg";
+import image02 from "../../Assets/popular-destination-2.jpg";
+import image03 from "../../Assets/popular-destination-3.jpg";
+import image04 from "../../Assets/popular-destination-4.jpg";
+import image05 from "../../Assets/popular-destination-6.jpg";
+import image06 from "../../Assets/popular-destination-7.jpg";
+
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Background, Parallax } from "react-parallax";
@@ -22,22 +25,22 @@ const NewsLetterTwo = () => {
     arrows: false,
     cssEase: "linear",
   };
-  const sideImages = [image1, image2, image3, image4, image5];
+  const sideImages = [image01, image02, image03, image04, image05, image06];
 
   return (
     <div className=" h-[100%] md:h-[90vh] w-[100%]  mt-[40px]">
       <Parallax strength={400} className="w-[100%] h-[100%] relative pb-7 ">
         <Background className="custom-bg w-[100vw] h-[100vh] ">
           <img
-            src={image1}
+            src={backgroundImage}
             alt="fill murray"
             className="w-[100%] h-[100%] object-cover object-center"
           />
         </Background>
 
-        <div className=" w-[100%] h-[90vh] grid grid-cols-2  place-items-center bg-gradient-to-t from-[#00ffee]/20 to-black/60">
+        <div className=" w-[100%] h-[90vh] grid grid-cols-2  place-items-center bg-gradient-to-t from-[#000]/70 to-black/10">
           <div className="w-[450px] h-[480px] flex flex-col items-center justify-center relative bg-black ">
-            <div className="w-[450px] h-[480px] ">
+            <div className="w-[500px] h-[480px] ">
               <Slider {...settings}>
                 {sideImages.map((images) => {
                   return (

@@ -1,7 +1,6 @@
 import React from "react";
-import DestinationBox from "./PopularDestinationBox/PopularDestinationBox";
-import img from "../../Assets/about-img-2.jpg";
-import BackgroundImg from "../../Assets/pngimg.com - world_map_PNG31 (1).png";
+import DestinationBox from "../PopularDestinationBox/PopularDestinationBox";
+import BackgroundImg from "../../Assets/Popular-Background.png";
 import { Background, Parallax } from "react-parallax";
 
 import "slick-carousel/slick/slick.css";

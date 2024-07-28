@@ -1,4 +1,9 @@
-import img3 from "../Assets/about-img-2.jpg";
+import destinationBox01 from "../Assets/popular-destination-1.jpg";
+import destinationBox02 from "../Assets/popular-destination-2.jpg";
+import destinationBox03 from "../Assets/popular-destination-3.jpg";
+import destinationBox04 from "../Assets/popular-destination-4.jpg";
+import destinationBox06 from "../Assets/popular-destination-6.jpg";
+import destinationBox07 from "../Assets/popular-destination-7.jpg";
 
 import package01 from "../Assets/package-1.jpg";
 import package02 from "../Assets/package-2.jpg";
@@ -9,14 +14,17 @@ import package06 from "../Assets/package-6.jpg";
 import package07 from "../Assets/package-7.jpg";
 import package08 from "../Assets/package-8.jpg";
 
+import discount01 from "../Assets/Deals-and-Discount-1.jpg";
+import discount02 from "../Assets/Deals-And-Discount-2.jpg";
+
 export const popularDestinationsData = [
   {
     id: 1,
-    img: img3,
+    img: destinationBox01,
     days: "12 days",
     price: "200",
     userCount: "12+",
-    title: "Greece Tour",
+    title: "Taste of Britain ",
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
             natus adipisicing elit. Impedit natus. Lorem ipsum dolor sit amet
             Lorem, ipsum. consectetur.`,
@@ -24,11 +32,11 @@ export const popularDestinationsData = [
 
   {
     id: 2,
-    img: img3,
+    img: destinationBox02,
     days: "12 days",
     price: "200",
     userCount: "12+",
-    title: "Greece Tour",
+    title: "The Venice Experience",
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
             natus adipisicing elit. Impedit natus. Lorem ipsum dolor sit amet
             Lorem, ipsum. consectetur.`,
@@ -36,11 +44,11 @@ export const popularDestinationsData = [
 
   {
     id: 3,
-    img: img3,
+    img: destinationBox03,
     days: "12 days",
     price: "200",
     userCount: "12+",
-    title: "Greece Tour",
+    title: "Taiwan Land Tour",
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
             natus adipisicing elit. Impedit natus. Lorem ipsum dolor sit amet
             Lorem, ipsum. consectetur.`,
@@ -48,11 +56,11 @@ export const popularDestinationsData = [
 
   {
     id: 4,
-    img: img3,
+    img: destinationBox04,
     days: "12 days",
     price: "200",
     userCount: "12+",
-    title: "Greece Tour",
+    title: "Spain's Costa del Sol",
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
             natus adipisicing elit. Impedit natus. Lorem ipsum dolor sit amet
             Lorem, ipsum. consectetur.`,
@@ -60,11 +68,11 @@ export const popularDestinationsData = [
 
   {
     id: 5,
-    img: img3,
+    img: package02,
     days: "12 days",
     price: "200",
     userCount: "12+",
-    title: "Greece Tour",
+    title: "Paris Honeymoon Tour",
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
             natus adipisicing elit. Impedit natus. Lorem ipsum dolor sit amet
             Lorem, ipsum. consectetur.`,
@@ -72,11 +80,11 @@ export const popularDestinationsData = [
 
   {
     id: 6,
-    img: img3,
+    img: destinationBox06,
     days: "12 days",
     price: "200",
     userCount: "12+",
-    title: "Greece Tour",
+    title: "Tours in Africa",
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
             natus adipisicing elit. Impedit natus. Lorem ipsum dolor sit amet
             Lorem, ipsum. consectetur.`,
@@ -84,11 +92,11 @@ export const popularDestinationsData = [
 
   {
     id: 7,
-    img: img3,
+    img: destinationBox07,
     days: "12 days",
     price: "200",
     userCount: "12+",
-    title: "Greece Tour",
+    title: "Thailand With Cambodia",
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
             natus adipisicing elit. Impedit natus. Lorem ipsum dolor sit amet
             Lorem, ipsum. consectetur.`,
@@ -96,11 +104,11 @@ export const popularDestinationsData = [
 
   {
     id: 8,
-    img: img3,
+    img: package04,
     days: "12 days",
     price: "200",
     userCount: "12+",
-    title: "Greece Tour",
+    title: "The Spanish Riviera",
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
             natus adipisicing elit. Impedit natus. Lorem ipsum dolor sit amet
             Lorem, ipsum. consectetur.`,
@@ -183,6 +191,32 @@ export const packagesData = [
     img: package08,
     price: "2100",
     title: "Traditional Indian Tour",
+    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            natus adipisicing elit. Impedit natus. Lorem ipsum dolor sit amet
+            Lorem, ipsum. consectetur.`,
+  },
+];
+
+export const dealsAndDiscountData = [
+  {
+    id: 1,
+    img: discount01,
+    days: "12 days",
+    price: "4500",
+    userCount: "12+",
+    title: "Family Packages ",
+    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            natus adipisicing elit. Impedit natus. Lorem ipsum dolor sit amet
+            Lorem, ipsum. consectetur.`,
+  },
+
+  {
+    id: 2,
+    img: discount02,
+    days: "12 days",
+    price: "1000",
+    userCount: "12+",
+    title: "Couple Packages",
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
             natus adipisicing elit. Impedit natus. Lorem ipsum dolor sit amet
             Lorem, ipsum. consectetur.`,

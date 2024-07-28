@@ -3,7 +3,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Hero from "./Components/Hero/Hero";
 import Footer from "./Components/Footer/Footer";
 import Packages from "./Components/Packages/Packages";
-import AboutDetails from "./Components/AboutDetails/AboutDetails";
+import AboutUs from "./Components/AboutUs/AboutUs";
 import VideoSection from "./Components/VideoSection/VideoSection";
 import NewsLetter from "./Components/NewsLetter/NewsLetter";
 import PopularDestinations from "./Components/PopularDestinations/PopularDestinations";
@@ -17,7 +17,7 @@ function App() {
     <div className="App overflow-x-hidden">
       <Navbar />
       <Hero />
-      <AboutDetails />
+      <AboutUs />
       <PopularDestinations />
       <VideoSection />
       <NewsLetter />

@@ -61,14 +61,14 @@ function TestimonialsAndStaff() {
       <div className="col-span-2 p-4 py-10 text-white text-center">
         <div>
           <h1 className="font-bold text-[32px] md:text-[37px] mb-2">
-            Meet With Guide
+            Meet Our Team
           </h1>
-          <h1 className="font-bold text-[32px] md:text-[37px] mb-2">
-            Tour Guide
-          </h1>
-          <p className="text-gray-700 text-[20px]">
-            Whether you're planning a romantic honeymoon or a family vacation,
-            our price section
+
+          <p className="text-gray-700 text-[18px] font-[300] w-[80%] mx-auto">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos rerum
+            amet doloribus veniam. Totam commodi unde explicabo a aut tempora
+            consectetur quaerat quas, odio nihil libero quam? Excepturi, animi
+            corporis?
           </p>
         </div>
 

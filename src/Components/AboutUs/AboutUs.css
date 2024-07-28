@@ -1,0 +1,33 @@
+.about-small-img-container-1 {
+  animation: about-box-one-animation 20s linear infinite;
+}
+
+@keyframes about-box-one-animation {
+  0% {
+    transform: translateY(0) translateX(-10px);
+  }
+  50% {
+    transform: translateY(70px) translateX(-20px);
+  }
+
+  100% {
+    transform: translateY(0) translateX(-10px);
+  }
+}
+
+.about-small-img-container-2 {
+  animation: about-box-two-animation 30s linear infinite;
+}
+
+@keyframes about-box-two-animation {
+  0% {
+    transform: translateY(0) translateX(-30px);
+  }
+  50% {
+    transform: translateY(-100px) translateX(60px);
+  }
+
+  100% {
+    transform: translateY(0) translateX(-30px);
+  }
+}

@@ -17,7 +17,7 @@ function PackagesBox(props) {
             <CiFaceSmile className="mr-3 text-[22px]" /> 9.3 Superb
           </p>
           <div className="flex justify-between items-center py-2 relative">
-            <h1 className="text-[19px] w-[70%] font-bold text-white">
+            <h1 className="text-[20px] w-[70%] font-bold text-white text-left">
               {props.title}
             </h1>
             <p className="package-price text-[#00ffee] font-extrabold">
