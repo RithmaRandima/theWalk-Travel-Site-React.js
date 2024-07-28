@@ -9,7 +9,7 @@ const Blog = () => {
   return (
     <div id="blog" className="h-[100%] w-[100%] py-3">
       <div className="flex flex-col items-center justify-center h-[50vh] px-7 w-[100%]">
-        <p className="text-[#f00] text-[17px] md:text-[22px] mb-3">
+        <p className="text-[#00ffee] text-[17px] md:text-[22px] ">
           Roaming Tales
         </p>
         <h1 className="font-bold text-[32px] md:text-[37px] mb-2">
@@ -50,7 +50,7 @@ const Blog = () => {
                 className="w-[100%] object-cover h-[100%]"
               />
             </div>
-            <div className="bg-black w-fit text-white my-4 p-1 px-5 rounded-lg hover:scale-75 duration-500">
+            <div className="bg--[#00ffee] md:bg-black w-fit text-white my-4 p-1 px-5 rounded-lg hover:scale-75 duration-500">
               April 7, 2024
             </div>
             <h1 className="my-3 font-extrabold text-[22px]">

@@ -14,7 +14,7 @@ const BlogBox = (props) => {
       </div>
       {/* text section */}
       <div className="w-[100%] md:w-[60%] text-left font-sans">
-        <div className="md:bg-black bg-red-600 w-fit text-white  my-4 md:my-2  px-6 py-1 md-5 md:px-3 text-[16px] md:text-[10px] rounded-lg md:rounded-md hover:scale-75 duration-500">
+        <div className="md:bg-black bg-[#00ffee] w-fit text-white  my-4 md:my-2  px-6 py-1 md-5 md:px-3 text-[16px] md:text-[10px] rounded-lg md:rounded-md hover:scale-75 duration-500">
           {props.date}
         </div>
 

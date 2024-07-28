@@ -9,6 +9,13 @@
   --primary-light: #690c0c;
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background: #4ef3ff;
+}
+
 @layer base {
   html {
     @apply scroll-smooth;
@@ -21,10 +28,6 @@
   li {
     @apply p-4 text-sm;
   }
-  /* 
-  button {
-    @apply px-4 py-1 bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] text-white;
-  } */
 
   h2 {
     @apply text-xl font-bold;

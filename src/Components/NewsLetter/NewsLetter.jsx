@@ -1,97 +1,106 @@
 import React from "react";
-import "./NewsLetter.css";
+import { TiTick } from "react-icons/ti";
+import backgroundImage from "../../Assets/Newsletter-Two-Background.jpg";
 
-import backgroundImage from "../../Assets/Deals-and-Discount-Background.png";
-import smallImage01 from "../../Assets/Deals-and-Discount-small-1.jpg";
-import smallImage02 from "../../Assets/Deals-and-Discount-small-2.jpg";
-import smallImage03 from "../../Assets/Deals-and-Discount-small-3.jpg";
-import smallImage04 from "../../Assets/Deals-and-Discount-small-4.jpg";
+import image01 from "../../Assets/popular-destination-2.jpg";
+import image02 from "../../Assets/popular-destination-3.jpg";
+import image03 from "../../Assets/popular-destination-6.jpg";
+import image04 from "../../Assets/popular-destination-7.jpg";
+
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { Background, Parallax } from "react-parallax";
 
 import { motion } from "framer-motion";
-import { Background, Parallax } from "react-parallax";
-import { dealsAndDiscountData } from "../../Data/DestinationData";
-import DestinationBox from "../PopularDestinationBox/PopularDestinationBox";
 
-function AboutDetails() {
+const NewsLetter = () => {
+  var settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    arrows: false,
+    cssEase: "linear",
+  };
+  const sideImages = [image01, image02, image03, image04];
+
   return (
-    <div
-      id="about"
-      className="overflow-hidden max-w-[1140px] m-auto w-full  grid grid-cols-1 md:grid-cols-3 mb-[50px] text-center md:text-left mt-20"
-    >
-      <div className="col-span-2 p-4 py-10">
-        <div>
-          <h1 className="font-bold text-[32px] md:text-[37px] mb-2">
-            Deals & Discounts
-          </h1>
-          <p className="text-gray-700 text-[20px]">
-            Whether you're planning a romantic honeymoon or a family vacation,
-            our price section has got you covered. So, start browsing today and
-            find the perfect
-          </p>
+    <div className=" h-[100%] md:h-[90vh] w-[100%]  mt-[40px]">
+      <Parallax strength={400} className="w-[100%] h-[100%] relative ">
+        <Background className="custom-bg w-[100vw] h-[100vh] ">
+          <img
+            src={backgroundImage}
+            alt="fill murray"
+            className="w-[100%] h-[100%] object-cover object-center"
+          />
+        </Background>
+
+        <div className=" w-[100%] h-[90vh] grid grid-cols-1 md:grid-cols-2  place-items-center bg-gradient-to-t from-[#000]/70 to-black/10">
+          <motion.div
+            initial={{ x: -500 }}
+            whileInView={{ x: 0 }}
+            transition={{
+              type: "spring",
+              stiffness: 200,
+              damping: 100,
+              delay: 0.1,
+            }}
+            className="hidden md:flex w-[500px] h-[480px] flex-col items-center justify-center relative "
+          >
+            <div className="w-[500px] h-[480px] ">
+              <Slider {...settings}>
+                {sideImages.map((images) => {
+                  return (
+                    <img
+                      src={images}
+                      className="w-[100%] h-[480px] object-cover"
+                      alt=""
+                    />
+                  );
+                })}
+              </Slider>
+            </div>
+          </motion.div>
+
+          <div className="p-6 mr-3 w-[100%]">
+            <div className="flex items-start flex-col text-left text-white">
+              <p className="text-[#00ffee] text-[17px] md:text-[22px] mb-3">
+                Adventure Travel
+              </p>
+              <h1 className="font-bold text-[32px] md:text-[37px] mb-2">
+                Embrace the Thrill of <br /> the Unknown
+              </h1>
+              <p className="leading-7 text-[16px] md:text-[17px] mb-3">
+                Are you tired of the typical tourist destinations and looking to
+                step out of your comfort zone? Adventure travel may be the
+                perfect solution for you! Here are four reasons why you should
+                book an adventure travel experience :
+              </p>
+            </div>
+            <div>
+              <div className="border-b border-white/70 flex py-5 text-white">
+                <TiTick className="text-[22px]  mr-3" />
+                <p>Connect with nature</p>
+              </div>
+
+              <div className="border-b border-white/70 flex py-5 text-white">
+                <TiTick className="text-[22px]  mr-3" />
+                <p>Experience other cultures</p>
+              </div>
+
+              <div className="flex py-5 text-white">
+                <TiTick className="text-[22px]  mr-3" />
+                <p>Create unforgettable memories</p>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div className="grid grid-cols-2 gap-5 w-[100%] h-[100%] mt-[20px]">
-          {dealsAndDiscountData.map((data) => {
-            return (
-              <DestinationBox
-                key={data.id}
-                img={data.img}
-                days={data.days}
-                title={data.title}
-                price={data.price}
-                description={data.description}
-                userCount={data.userCount}
-              />
-            );
-          })}
-        </div>
-      </div>
-
-      <div className="newsletter-right h-[500px] w-[380px] relative">
-        <Parallax strength={400} className="w-[100%] h-[100vh] ">
-          <Background className="custom-bg w-[390px] h-[500px] opacity-25">
-            <img
-              src={backgroundImage}
-              alt="fill murray"
-              className="w-[100%] h-[100%] object-contain"
-            />
-          </Background>
-
-          <div className="deals-small-box absolute w-[140px] h-[140px] rounded-full p-1 overflow-hidden border-[#00ffee] border-2 border-dashed left-5 top-7">
-            <img
-              src={smallImage01}
-              className="w-[100%] h-[100%] object-cover rounded-full"
-              alt=""
-            />
-          </div>
-
-          <div className="deals-small-box absolute w-[210px] h-[210px]  rounded-full p-3 overflow-hidden  left-[160px] top-[110px]  border-[#00ffee] border-2 border-dashed">
-            <img
-              src={smallImage02}
-              className="w-[100%] h-[100%] object-cover rounded-full"
-              alt=""
-            />
-          </div>
-
-          <div className="deals-small-box absolute w-[140px] h-[140px] rounded-full p-2 overflow-hidden  left-[40px] top-[300px]  border-[#00ffee] border-2 border-dashed">
-            <img
-              src={smallImage03}
-              className="w-[100%] h-[100%] object-cover rounded-full"
-              alt=""
-            />
-          </div>
-
-          <div className="deals-small-box absolute w-[130px] h-[130px] rounded-full p-1 overflow-hidden  left-[200px] top-[370px]  border-[#00ffee] border-2 border-dashed">
-            <img
-              src={smallImage04}
-              className="w-[100%] h-[100%] object-cover rounded-full"
-              alt=""
-            />
-          </div>
-        </Parallax>
-      </div>
+      </Parallax>
     </div>
   );
-}
+};
 
-export default AboutDetails;
+export default NewsLetter;

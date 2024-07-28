@@ -5,9 +5,9 @@ import Footer from "./Components/Footer/Footer";
 import Packages from "./Components/Packages/Packages";
 import AboutUs from "./Components/AboutUs/AboutUs";
 import VideoSection from "./Components/VideoSection/VideoSection";
-import NewsLetter from "./Components/NewsLetter/NewsLetter";
+import DealsAndDiscount from "./Components/DealsAndDiscount/DealsAndDiscount";
 import PopularDestinations from "./Components/PopularDestinations/PopularDestinations";
-import NewsLetterTwo from "./Components/NewsLetterTwo/NewsLetterTwo";
+import NewsLetter from "./Components/NewsLetter/NewsLetter";
 import DestinationPicker from "./Components/DestinationPicker/DestinationPicker";
 import Blog from "./Components/Blog/Blog";
 import TestimonialsAndStaff from "./Components/TestimonialsAndStaff/TestimonialsAndStaff";
@@ -20,10 +20,10 @@ function App() {
       <AboutUs />
       <PopularDestinations />
       <VideoSection />
-      <NewsLetter />
+      <DealsAndDiscount />
       <DestinationPicker />
       <Packages />
-      <NewsLetterTwo />
+      <NewsLetter />
       <Blog />
       <TestimonialsAndStaff />
       <Footer />
