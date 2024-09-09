@@ -1,11 +1,11 @@
 import React from "react";
 import { TiTick } from "react-icons/ti";
-import backgroundImage from "../../Assets/Newsletter-Two-Background.jpg";
+import backgroundImage from "../../Assets/Newsletter-Two-Background.jpeg";
 
-import image01 from "../../Assets/popular-destination-2.jpg";
-import image02 from "../../Assets/popular-destination-3.jpg";
-import image03 from "../../Assets/popular-destination-6.jpg";
-import image04 from "../../Assets/popular-destination-7.jpg";
+import image01 from "../../Assets/popular-destination-2.jpeg";
+import image02 from "../../Assets/popular-destination-3.jpeg";
+import image03 from "../../Assets/popular-destination-6.jpeg";
+import image04 from "../../Assets/popular-destination-7.jpeg";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";

@@ -1,8 +1,8 @@
 import React from "react";
 import "./AboutUs.css";
-import bigImage from "../../Assets/about-us-big-image.jpg";
-import small01 from "../../Assets/about-us-small-1.jpg";
-import small02 from "../../Assets/about-us-small-2.jpg";
+import bigImage from "../../Assets/about-us-big-image.jpeg";
+import small01 from "../../Assets/about-us-small-1.jpeg";
+import small02 from "../../Assets/about-us-small-2.jpeg";
 import { motion } from "framer-motion";
 
 function AboutUs() {
@@ -93,9 +93,9 @@ function AboutUs() {
       </div>
 
       {/* image section */}
-      <div className="h-[90vh] flex items-center justify-center relative">
+      <div className="h-[45vh] md:h-[90vh] flex items-center justify-center relative">
         {/* Big Image */}
-        <div className="md:h-[100%] h-[92%] w-[80%] md:w-[90%] bg-white border-4 border-[#00ffee] border-dashed   rounded-full overflow-hidden p-3">
+        <div className="md:h-[100%]  h-[100%] w-[90%] md:w-[90%] bg-white border-4 border-[#00ffee] border-dashed   rounded-full overflow-hidden p-3">
           <img
             src={bigImage}
             className="w-[100%] h-[100%] object-cover rounded-full"
@@ -104,7 +104,7 @@ function AboutUs() {
         </div>
 
         {/* Small Image */}
-        <div className="about-small-img-container-1 absolute h-[140px] w-[140px] bg-transparent border-2 border-[#00ffee] border-dashed rounded-full overflow-hidden p-2 top-[100px] left-[-10px]">
+        <div className="about-small-img-container-1 absolute h-[100px] w-[100px] md:h-[140px] md:w-[140px] bg-transparent border-2 border-[#00ffee] border-dashed rounded-full overflow-hidden p-2 top-[100px] md:left-[-10px] left-[10px]">
           <img
             src={small01}
             className="w-[100%] h-[100%] object-cover rounded-full"
@@ -113,7 +113,7 @@ function AboutUs() {
         </div>
 
         {/* Small Image */}
-        <div className="about-small-img-container-2 absolute h-[180px] w-[180px] bg-transparent border border-[#00ffee] border-dashed rounded-full overflow-hidden p-2 right-[30px] bottom-[-30px]">
+        <div className="about-small-img-container-2 absolute h-[140px] w-[140px]  md:h-[180px] md:w-[180px] bg-transparent border border-[#00ffee] border-dashed rounded-full overflow-hidden p-2 right-[40px] md:right-[30px] bottom-[-30px]">
           <img
             src={small02}
             className="w-[100%] h-[100%] object-cover rounded-full"
@@ -196,8 +196,8 @@ function AboutUs() {
           }}
           className="mt-10 text-[17px]"
         >
-          Founder / CEO:{" "}
-          <span className="text-[#00ffee] text-[20px] tracking-[2px]">
+          Founder / CEO :
+          <span className="text-[#00ffee] text-[20px] tracking-[2px] ml-[7px]">
             Henry Cavil
           </span>
         </motion.p>

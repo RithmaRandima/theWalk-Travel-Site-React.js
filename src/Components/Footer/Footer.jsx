@@ -45,7 +45,7 @@ const Footer = () => {
             damping: 10,
             delay: 0.4,
           }}
-          className=" w[100%] h-[100%] text-center p-6"
+          className="hidden md:block w[100%] h-[100%] text-center p-6"
         >
           <h1 className="font-bold mb-5 text-[18px]">VISIT</h1>
           <p className="w-[180px] mx-auto text-[14px] text-gray-400">
@@ -136,7 +136,7 @@ const Footer = () => {
 
       {/* bottom */}
       <div className="flex flex-row justify-between px-10 items-center py-4 gap-7 pb-[17px]  bg-[#000000] text-white">
-        <p className="text-[10px] md:text-[8px] tracking-[4px]">
+        <p className="text-[6px] md:text-[8px] tracking-[4px]">
           © 2023 the<span className="text-[#00ffee] font-bold">walk</span> ALL
           RIGHTS RESERVED.
         </p>

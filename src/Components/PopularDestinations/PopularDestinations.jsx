@@ -34,8 +34,10 @@ const PopularDestinations = () => {
             architecto. Lorem ipsum dolor sit amet.
           </p>
         </div>
-        <div className=" w-[100%] mx-auto  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
-          {popularDestinationsData.map((data) => {
+
+        {/* display */}
+        <div className="hidden md:grid w-[100%] mx-auto   grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+          {popularDestinationsData.map((data, i) => {
             return (
               <DestinationBox
                 key={data.id}
@@ -47,6 +49,25 @@ const PopularDestinations = () => {
                 userCount={data.userCount}
               />
             );
+          })}
+        </div>
+
+        {/* mobile */}
+        <div className="md:hidden w-[100%] mx-auto  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+          {popularDestinationsData.map((data, i) => {
+            if (i < 3) {
+              return (
+                <DestinationBox
+                  key={data.id}
+                  img={data.img}
+                  days={data.days}
+                  title={data.title}
+                  price={data.price}
+                  description={data.description}
+                  userCount={data.userCount}
+                />
+              );
+            }
           })}
         </div>
 

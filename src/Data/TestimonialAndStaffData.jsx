@@ -8,7 +8,7 @@ import user06 from "../Assets/user-6.webp";
 import staff01 from "../Assets/Staff-1.avif";
 import staff02 from "../Assets/staff-2.webp";
 import staff03 from "../Assets/staff-3.webp";
-import staff04 from "../Assets/staff-4.jpg";
+import staff04 from "../Assets/staff-4.jpeg";
 import staff05 from "../Assets/staff-5.webp";
 import staff06 from "../Assets/staff-6.webp";
 import staff07 from "../Assets/staff-7.webp";

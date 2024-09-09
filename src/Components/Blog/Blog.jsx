@@ -1,7 +1,7 @@
 import React from "react";
 import BlogBox from "../BlogBox/BlogBox";
 import "../BlogBox/BlogBox.css";
-import img1 from "../../Assets/blog-big.jpg";
+import img1 from "../../Assets/blog-big.jpeg";
 import { blogData } from "../../Data/BlogData";
 import { FaArrowRight } from "react-icons/fa";
 

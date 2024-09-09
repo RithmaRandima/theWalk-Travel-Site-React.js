@@ -2,10 +2,10 @@ import React from "react";
 import "./DealsAndDiscount.css";
 
 import backgroundImage from "../../Assets/Deals-and-Discount-Background.png";
-import smallImage01 from "../../Assets/Deals-and-Discount-small-1.jpg";
-import smallImage02 from "../../Assets/Deals-and-Discount-small-2.jpg";
-import smallImage03 from "../../Assets/Deals-and-Discount-small-3.jpg";
-import smallImage04 from "../../Assets/Deals-and-Discount-small-4.jpg";
+import smallImage01 from "../../Assets/Deals-and-Discount-small-1.jpeg";
+import smallImage02 from "../../Assets/Deals-and-Discount-small-2.jpeg";
+import smallImage03 from "../../Assets/Deals-and-Discount-small-3.jpeg";
+import smallImage04 from "../../Assets/Deals-and-Discount-small-4.jpeg";
 
 import { motion } from "framer-motion";
 import { Background, Parallax } from "react-parallax";
@@ -42,7 +42,7 @@ function DealsAndDiscount() {
               damping: 10,
               delay: 0.4,
             }}
-            className="text-gray-700 text-[20px]"
+            className="text-gray-700 text-[20px] mb-4"
           >
             Whether you're planning a romantic honeymoon or a family vacation,
             our price section has got you covered. So, start browsing today and
@@ -51,7 +51,7 @@ function DealsAndDiscount() {
         </div>
 
         <motion.div
-          className="grid md:grid-cols-2 gap-2 md:gap-5 w-[100%] h-[100%] mt-[20px]"
+          className="grid md:grid-cols-2  md:gap-5 w-[100%] h-[100%] mt-[30px] md:mt-[20px]"
           initial={{ opacity: 0, scale: 0.3 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{

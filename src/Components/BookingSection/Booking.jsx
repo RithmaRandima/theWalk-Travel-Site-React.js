@@ -1,17 +1,8 @@
 import React from "react";
-import { motion } from "framer-motion";
 
 function Booking() {
   return (
     <div
-      initial={{ opacity: 0, scale: 0.5 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      transition={{
-        type: "spring",
-        stiffness: 100,
-        damping: 10,
-        delay: 0.4,
-      }}
       id="deals"
       className="md:max-w-[1140px] w-[95%] px-2 py-1 md:px-10 md:py-[10px] bg-white shadow-xl rounded-[10px] mb-[100px] z-10 absolute left-[50%] translate-x-[-50%] top-[100%] translate-y-[-100%]"
     >

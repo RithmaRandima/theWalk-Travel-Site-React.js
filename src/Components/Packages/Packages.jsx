@@ -1,8 +1,5 @@
 import React from "react";
-import img1 from "../../Assets/package1.jpg";
-import img2 from "../../Assets/package2.jpg";
-import img3 from "../../Assets/package3.jpg";
-import img4 from "../../Assets/package4.jpg";
+
 import PackagesBox from "./PackagesBox/PackagesBox";
 
 import "slick-carousel/slick/slick.css";

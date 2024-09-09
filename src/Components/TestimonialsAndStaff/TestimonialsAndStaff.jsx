@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import StaffBox from "../StaffBox/StaffBox";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

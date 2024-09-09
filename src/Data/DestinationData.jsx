@@ -1,21 +1,21 @@
-import destinationBox01 from "../Assets/popular-destination-1.jpg";
-import destinationBox02 from "../Assets/popular-destination-2.jpg";
-import destinationBox03 from "../Assets/popular-destination-3.jpg";
-import destinationBox04 from "../Assets/popular-destination-4.jpg";
-import destinationBox06 from "../Assets/popular-destination-6.jpg";
-import destinationBox07 from "../Assets/popular-destination-7.jpg";
+import destinationBox01 from "../Assets/popular-destination-1.jpeg";
+import destinationBox02 from "../Assets/popular-destination-2.jpeg";
+import destinationBox03 from "../Assets/popular-destination-3.jpeg";
+import destinationBox04 from "../Assets/popular-destination-4.jpeg";
+import destinationBox06 from "../Assets/popular-destination-6.jpeg";
+import destinationBox07 from "../Assets/popular-destination-7.jpeg";
 
-import package01 from "../Assets/package-1.jpg";
-import package02 from "../Assets/package-2.jpg";
-import package03 from "../Assets/package-3.jpg";
-import package04 from "../Assets/package-4.jpg";
-import package05 from "../Assets/package-5.jpg";
-import package06 from "../Assets/package-6.jpg";
-import package07 from "../Assets/package-7.jpg";
-import package08 from "../Assets/package-8.jpg";
+import package01 from "../Assets/package-1.jpeg";
+import package02 from "../Assets/package-2.jpeg";
+import package03 from "../Assets/package-3.jpeg";
+import package04 from "../Assets/package-4.jpeg";
+import package05 from "../Assets/package-5.jpeg";
+import package06 from "../Assets/package-6.jpeg";
+import package07 from "../Assets/package-7.jpeg";
+import package08 from "../Assets/package-8.jpeg";
 
-import discount01 from "../Assets/Deals-and-Discount-1.jpg";
-import discount02 from "../Assets/Deals-And-Discount-2.jpg";
+import discount01 from "../Assets/Deals-and-Discount-1.jpeg";
+import discount02 from "../Assets/Deals-and-Discount-2.jpeg";
 
 export const popularDestinationsData = [
   {
