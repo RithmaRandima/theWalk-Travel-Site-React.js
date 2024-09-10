@@ -38,7 +38,7 @@ const Navbar = () => {
       className={
         color
           ? "header-bg w-full fixed min-h-[50px] flex justify-between items-center z-50 text-white px-6 py-1"
-          : "w-full fixed min-h-[50px] flex justify-between items-center z-50 text-white px-6 py-1"
+          : "w-full fixed min-h-[80px] flex justify-between items-center z-50 text-white px-6 py-1"
       }
     >
       <ul className="hidden sm:flex px-4">
