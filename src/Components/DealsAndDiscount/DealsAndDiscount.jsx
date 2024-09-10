@@ -51,7 +51,7 @@ function DealsAndDiscount() {
         </div>
 
         <motion.div
-          className="grid md:grid-cols-2  md:gap-5 w-[100%] h-[100%] mt-[30px] md:mt-[20px]"
+          className="hidden md:grid md:grid-cols-2  md:gap-5 w-[100%] h-[100%] mt-[30px] md:mt-[20px]"
           initial={{ opacity: 0, scale: 0.3 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{
@@ -73,6 +73,34 @@ function DealsAndDiscount() {
                 userCount={data.userCount}
               />
             );
+          })}
+        </motion.div>
+
+        <motion.div
+          className="md:hidden grid  md:gap-5 w-[100%] h-[100%] mt-[30px]"
+          initial={{ opacity: 0, scale: 0.3 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 100,
+            damping: 10,
+            delay: 0.5,
+          }}
+        >
+          {dealsAndDiscountData.map((data, i) => {
+            if (i < 1) {
+              return (
+                <DestinationBox
+                  key={data.id}
+                  img={data.img}
+                  days={data.days}
+                  title={data.title}
+                  price={data.price}
+                  description={data.description}
+                  userCount={data.userCount}
+                />
+              );
+            }
           })}
         </motion.div>
       </div>

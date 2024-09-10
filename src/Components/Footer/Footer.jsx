@@ -26,11 +26,11 @@ const Footer = () => {
               </span>
             </h1>
           </div>
-          <p className="w-[240px] mx-auto mb-5 text-[15px] text-gray-400">
+          <p className="hidden md:block w-[240px] mx-auto mb-5 text-[15px] text-gray-400">
             .theWalk, founded in 2024, is dedicated to all those who love to
             wander far and wide.
           </p>
-          <p className="w-[200px] mx-auto text-[15px] text-gray-400">
+          <p className="hidden md:block w-[200px] mx-auto text-[15px] text-gray-400">
             We'd like to invite you on a culinary adventure, where you’ll
             explore undiscovered gourmet experiences.
           </p>
