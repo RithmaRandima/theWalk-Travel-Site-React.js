@@ -63,7 +63,7 @@ function TestimonialsAndStaff() {
             Meet Our Team
           </h1>
 
-          <p className="hidden md:black text-gray-700 text-[18px] font-[300] w-[80%] mx-auto">
+          <p className="hidden md:block text-gray-700 text-[18px] font-[300] w-[80%] mx-auto">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos rerum
             amet doloribus veniam. Totam commodi unde explicabo a aut tempora
             consectetur quaerat quas, odio nihil libero quam? Excepturi, animi
@@ -71,7 +71,7 @@ function TestimonialsAndStaff() {
           </p>
         </div>
 
-        <div className="w-[100%] h-[100%] mt-[20px]">
+        <div className="md:w-[100%] w-[80%] mx-auto h-[100%] mt-[20px]">
           <Slider {...settings}>
             {StaffData.map((data) => {
               return (

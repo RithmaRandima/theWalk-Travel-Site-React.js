@@ -41,11 +41,13 @@ const Blog = () => {
       <div className="grid grid-cols-1 md:grid-cols-2  w-full h-[100%]">
         {/* blog box Section*/}
         <div className="w-full h-[100%] p-2 py-6 ">
+          {/* desktop */}
           {/* BlogBox Container */}
           <div className="hidden md:flex flex-col justify-between gap-2 md:gap-5">
-            {blogData.map((data) => {
+            {blogData.map((data, i) => {
               return (
                 <BlogBox
+                  key={i}
                   img={data.img}
                   date={data.date}
                   title={data.title}
@@ -54,12 +56,13 @@ const Blog = () => {
               );
             })}
           </div>
-
+          {/* mobile */}
           <div className="block md:hidden w-[100%] mx-auto h-[100%]">
             <Slider {...settings}>
-              {blogData.map((data) => {
+              {blogData.map((data, i) => {
                 return (
                   <BlogBox
+                    key={i}
                     img={data.img}
                     date={data.date}
                     title={data.title}

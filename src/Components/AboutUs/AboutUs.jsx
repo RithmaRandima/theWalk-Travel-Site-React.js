@@ -137,6 +137,7 @@ function AboutUs() {
         >
           ABOUT US
         </motion.p>
+
         <motion.h1
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -144,15 +145,16 @@ function AboutUs() {
             type: "spring",
             stiffness: 100,
             damping: 10,
-            delay: 0.4,
+            delay: 0.3,
           }}
           className="text-5xl mb-8"
         >
-          Welcome To <span className="text-[35px] ml-3">the</span>
-          <span className="text-[#00ffee] uppercase font-bold text-[50px]">
+          Welcome To <span className="text-[35px] font-bold ml-3">the</span>
+          <span className="text-[#00ffee] uppercase text-[50px] font-bold">
             walk
           </span>
         </motion.h1>
+
         <motion.p
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -160,7 +162,7 @@ function AboutUs() {
             type: "spring",
             stiffness: 100,
             damping: 10,
-            delay: 0.6,
+            delay: 0.4,
           }}
           className="text-gray-700 text-[18px] mb-5"
         >
@@ -176,7 +178,7 @@ function AboutUs() {
             type: "spring",
             stiffness: 100,
             damping: 10,
-            delay: 0.6,
+            delay: 0.4,
           }}
           className="text-gray-700 text-[18px]"
         >
@@ -185,6 +187,7 @@ function AboutUs() {
           destination. Hotels worldwide, NH Hotel Group offers a wide variety of
           hotels catering for a perfect stay no matter where your destination.
         </motion.p>
+
         <motion.p
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -192,7 +195,7 @@ function AboutUs() {
             type: "spring",
             stiffness: 100,
             damping: 10,
-            delay: 0.4,
+            delay: 0.5,
           }}
           className="mt-10 text-[17px]"
         >

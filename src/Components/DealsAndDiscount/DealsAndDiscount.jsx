@@ -40,7 +40,7 @@ function DealsAndDiscount() {
               type: "spring",
               stiffness: 100,
               damping: 10,
-              delay: 0.4,
+              delay: 0.3,
             }}
             className="text-gray-700 text-[20px] mb-4"
           >
@@ -58,7 +58,7 @@ function DealsAndDiscount() {
             type: "spring",
             stiffness: 100,
             damping: 10,
-            delay: 0.5,
+            delay: 0.3,
           }}
         >
           {dealsAndDiscountData.map((data) => {
@@ -84,7 +84,7 @@ function DealsAndDiscount() {
             type: "spring",
             stiffness: 100,
             damping: 10,
-            delay: 0.5,
+            delay: 0.3,
           }}
         >
           {dealsAndDiscountData.map((data, i) => {

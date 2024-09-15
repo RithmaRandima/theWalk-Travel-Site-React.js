@@ -24,7 +24,7 @@ const BlogBox = (props) => {
         <p className="font-[200] text-[18px] md:text-[15px] mb-3">
           {props.description}
         </p>
-        <button className="hidden md:flex items-center md:py-1 md:text-[10px] mb-3 bg-[#00ffee] px-3 rounded-[50px] hover:scale-110 duration-500">
+        <button className="flex items-center py-2  md:text-[10px] mb-3 bg-[#000] px-3 rounded-[50px] hover:scale-110 duration-500 mt-3 text-[#00ffee]">
           Read More <FaArrowRight className="ml-1" />
         </button>
       </div>

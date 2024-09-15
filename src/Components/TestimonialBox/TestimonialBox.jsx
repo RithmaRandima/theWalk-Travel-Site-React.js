@@ -4,7 +4,7 @@ import { IoLocationSharp } from "react-icons/io5";
 
 const TestimonialBox = (props) => {
   return (
-    <div className="w-[90%] md:w-[99%] mx-auto h-[350px] m-2 mt-[55px] relative bg-[#00ffee]/20 p-2 py-5 text-white">
+    <div className="w-[90%] md:w-[99%] mx-auto h-[350px] m-2 mt-[55px] relative  p-2 py-5 text-white">
       {/* userImg */}
       <div className="w-[80px] h-[80px] bg-red-400 rounded-full overflow-hidden absolute left-[50%] translate-x-[-50%] top-[-43px] shadow-sm shadow-white">
         <img

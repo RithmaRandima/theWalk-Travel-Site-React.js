@@ -52,9 +52,10 @@ const NewsLetter = () => {
           >
             <div className="w-[500px] h-[480px] ">
               <Slider {...settings}>
-                {sideImages.map((images) => {
+                {sideImages.map((images, i) => {
                   return (
                     <img
+                      key={i}
                       src={images}
                       className="w-[100%] h-[480px] object-cover"
                       alt=""

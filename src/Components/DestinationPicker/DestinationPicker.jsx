@@ -38,7 +38,7 @@ const DestinationPicker = () => {
             type: "spring",
             stiffness: 100,
             damping: 10,
-            delay: 0.4,
+            delay: 0.2,
           }}
         >
           <div className="flex items-center w-full font-sans">

@@ -14,11 +14,11 @@ const Footer = () => {
             type: "spring",
             stiffness: 100,
             damping: 10,
-            delay: 0.2,
+            delay: 0.1,
           }}
           className=" w[100%] h-[100%] text-center p-6"
         >
-          <div className="flex items-center  font-sans relative mb-10">
+          <div className="flex items-center  font-sans relative md:mb-10">
             <h1 className="text-[20px] font-bold text-[#000] pl-2 bg-[#00ffee] mx-auto ">
               the
               <span className="font-bold text-[#00ffee] bg-black p-1 pr-2 text-[20px] ">
@@ -35,6 +35,7 @@ const Footer = () => {
             explore undiscovered gourmet experiences.
           </p>
         </motion.div>
+
         {/*col-2  */}
         <motion.div
           initial={{ opacity: 0, y: 100 }}
@@ -43,7 +44,7 @@ const Footer = () => {
             type: "spring",
             stiffness: 100,
             damping: 10,
-            delay: 0.4,
+            delay: 0.2,
           }}
           className="hidden md:block w[100%] h-[100%] text-center p-6"
         >
@@ -71,7 +72,7 @@ const Footer = () => {
             type: "spring",
             stiffness: 100,
             damping: 10,
-            delay: 0.6,
+            delay: 0.3,
           }}
           className="text-center"
         >
@@ -87,6 +88,7 @@ const Footer = () => {
           <p className="mx-auto text-[14px] text-gray-400">SATURDAY/SUNDAY</p>
           <p className="mx-auto text-[14px] text-gray-400"> 10am - 11pm</p>
         </motion.div>
+
         {/* col-4 */}
         <motion.div
           initial={{ opacity: 0, y: 100 }}
@@ -95,13 +97,15 @@ const Footer = () => {
             type: "spring",
             stiffness: 100,
             damping: 10,
-            delay: 0.8,
+            delay: 0.4,
           }}
           className="text-center"
         >
-          <h1 className="font-bold my-5 text-[18px]">ABOUT</h1>
-          <p className="mx-auto text-[14px] text-gray-400">FAQ</p>
-          <p className="w-[50%] mx-auto text-[14px] text-gray-400 mb-7">
+          <h1 className="hidden md:block font-bold my-5 text-[18px]">ABOUT</h1>
+          <p className="hidden md:block mx-auto text-[14px] text-gray-400">
+            FAQ
+          </p>
+          <p className="hidden md:block w-[50%] mx-auto text-[14px] text-gray-400 mb-7">
             Reservation Policy Privacy Policy Health & Safety
           </p>
           <h1 className="font-bold my-5 text-[18px]">FOLLOW ALONG</h1>
@@ -140,7 +144,7 @@ const Footer = () => {
           © 2023 the<span className="text-[#00ffee] font-bold">walk</span> ALL
           RIGHTS RESERVED.
         </p>
-        <div className="flex items-center font-sans relative">
+        <div className="hidden md:flex items-center font-sans relative">
           <h1 className="text-[20px] font-bold text-[#000] pl-2 bg-[#00ffee] ">
             the
             <span className="font-bold text-[#00ffee] bg-black p-1 pr-2 text-[20px] ">
